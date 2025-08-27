@@ -117,7 +117,6 @@ int main() {
     }
     int prev2 = 0;                   // To store dp[i-2]
     int prev = arr[0];              // To store dp[i-1]    
-    // int curr;                        // To store dp[i]
     for(int i=1; i<n; i++) {
         int pick = arr[i];                  // Include the current element
         if(i>1) pick += prev2;            // If i>1, add the value from dp[i-2]
